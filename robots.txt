@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://andekarivera20-cpu.github.io/Industria-tools/sitemap.xml
+Sitemap: https://andekarivera20-cpu.github.io/Industria-Tools/sitemap.xml

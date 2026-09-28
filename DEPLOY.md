@@ -1,6 +1,6 @@
 # Publicar / actualizar
 
-1. Abre el repositorio: https://github.com/andekarivera20-cpu/Industria-tools
+1. Abre el repositorio: https://github.com/andekarivera20-cpu/Industria-Tools
 2. Sube TODO el contenido de esta carpeta a la raíz del repositorio.
 3. Si ya existen archivos con el mismo nombre, sustitúyelos.
 4. Haz Commit en `main`.
@@ -9,7 +9,7 @@
    - Branch: main
    - Folder: /(root)
 6. Web pública:
-   https://andekarivera20-cpu.github.io/Industria-tools/
+   https://andekarivera20-cpu.github.io/Industria-Tools/
 
 ## Importante
 
