@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IndusTools | Calculadoras y herramientas de automatización industrial</title>
+  <meta name="description" content="26 herramientas gratuitas para automatización industrial: PLC, 4–20 mA, Siemens, Modbus, motores, electricidad, redes IPv4, PT100 y más.">
+  <meta name="robots" content="index,follow">
+<link rel="stylesheet" href="style.css">
+
+  <link rel="canonical" href="https://andekarivera20-cpu.github.io/Industria-tools/">
+  <meta name="theme-color" content="#061019">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="IndusTools | Herramientas para automatización industrial">
+  <meta property="og:description" content="26 herramientas gratuitas para PLC, señales analógicas, Modbus, motores, electricidad, redes y automatización industrial.">
+  <meta property="og:url" content="https://andekarivera20-cpu.github.io/Industria-tools/">
+  <meta property="og:image" content="https://andekarivera20-cpu.github.io/Industria-tools/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IndusTools | Automatización industrial">
+  <meta name="twitter:description" content="Calculadoras y conversores para PLC, Modbus, señales, motores, electricidad y redes.">
+  <meta name="twitter:image" content="https://andekarivera20-cpu.github.io/Industria-tools/social-card.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "IndusTools",
+    "url": "https://andekarivera20-cpu.github.io/Industria-tools/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "es",
+    "description": "Herramientas gratuitas para automatización industrial, PLC, Modbus, señales analógicas, motores, electricidad y redes.",
+    "offers": {"@type":"Offer","price":"0","priceCurrency":"EUR"}
+  }
+  </script>
+
+</head>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">IT</span>
+      <span>Indus<span>Tools</span></span>
+    </a>
+    <nav id="nav">
+      <a href="#herramientas">Herramientas</a>
+      <a href="#favoritas">Favoritas</a>
+      <a href="#historial">Historial</a>
+      <a href="#acerca">Acerca</a>
+    </nav>
+    <button id="menuButton" class="menu-button" type="button" aria-label="Abrir menú">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <span class="pill">⚙ Toolbox para automatización industrial</span>
+      <h1>Todo lo que calculas en planta, <span>en una sola web.</span></h1>
+      <p>Conversores de señales, PLC, Modbus, electricidad, motores y unidades. Sin cuentas, sin instalaciones y sin depender de una app.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#herramientas">Abrir toolbox →</a>
+        <button class="button secondary" id="goFavorites" type="button">★ Mis favoritas</button>
+        <button class="button secondary" id="shareSite" type="button">↗ Compartir</button>
+        <button class="button secondary" id="installApp" type="button" hidden>↓ Instalar</button>
+      </div>
+      <div class="hero-mini">
+        <span><b>26</b> herramientas</span>
+        <span><b>100%</b> navegador</span>
+        <span><b>0</b> registros</span>
+      </div>
+    </div>
+    <div class="hero-console">
+      <div class="console-top"><span></span><span></span><span></span><b>PLC / SIGNAL MONITOR</b></div>
+      <div class="console-main">
+        <div class="console-number">13.92 <small>mA</small></div>
+        <div class="bar"><div style="width:62%"></div></div>
+        <div class="console-grid">
+          <div><small>RANGE</small><b>4–20 mA</b></div>
+          <div><small>PROCESS</small><b>6.20 bar</b></div>
+          <div><small>SCALE</small><b>62.0 %</b></div>
+          <div><small>STATUS</small><b class="ok">OK</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="finder" id="herramientas">
+  <div class="container">
+    <div class="finder-box">
+      <span>⌕</span>
+      <input id="searchInput" type="search" placeholder="Buscar: 4-20 mA, Modbus, trifásica, binario, S5TIME...">
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter active" data-category="all">Todas</button>
+      <button class="filter" data-category="signals">Señales</button>
+      <button class="filter" data-category="plc">PLC / Datos</button>
+      <button class="filter" data-category="electrical">Electricidad</button>
+      <button class="filter" data-category="motors">Motores</button>
+      <button class="filter" data-category="units">Unidades</button>
+      <button class="filter" data-category="networks">Redes</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="section-head">
+    <div><span class="eyebrow">TOOLBOX</span><h2>Herramientas</h2></div>
+    <p id="toolCount">14 herramientas disponibles</p>
+  </div>
+
+  <div class="tools-grid" id="toolsGrid">
+
+    <article class="tool" data-category="signals" data-key="ma420" data-search="4 20 ma corriente analogica escala sensor proceso presión caudal temperatura">
+      <div class="tool-head">
+        <div><span class="icon">〽</span><h3>4–20 mA → proceso</h3><p>Convierte una corriente analógica al valor real del proceso.</p></div>
+        <button class="fav" data-fav="ma420" title="Favorito">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Corriente mA<input id="maValue" type="number" step="0.01" value="12"></label>
+        <label>Mínimo proceso<input id="maMin" type="number" step="0.01" value="0"></label>
+        <label>Máximo proceso<input id="maMax" type="number" step="0.01" value="10"></label>
+        <label>Unidad<input id="maUnit" value="bar"></label>
+      </div>
+      <div class="result"><small>RESULTADO</small><strong id="maOut">5.00 bar</strong><span id="maPct">50.0 % del rango</span></div>
+    </article>
+
+    <article class="tool" data-category="signals" data-key="proc420" data-search="proceso a 4 20 ma señal inversa corriente analogica">
+      <div class="tool-head">
+        <div><span class="icon">↔</span><h3>Proceso → 4–20 mA</h3><p>Calcula qué corriente corresponde a un valor de proceso.</p></div>
+        <button class="fav" data-fav="proc420">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Valor proceso<input id="procValue" type="number" step="0.01" value="6.2"></label>
+        <label>Mínimo<input id="procMin" type="number" step="0.01" value="0"></label>
+        <label>Máximo<input id="procMax" type="number" step="0.01" value="10"></label>
+        <label>Unidad<input id="procUnit" value="bar"></label>
+      </div>
+      <div class="result"><small>CORRIENTE</small><strong id="procMaOut">13.92 mA</strong><span id="procPct">62.0 % del rango</span></div>
+    </article>
+
+    <article class="tool" data-category="signals" data-key="v010" data-search="0 10 v voltios señal analogica escalado">
+      <div class="tool-head">
+        <div><span class="icon">ϟ</span><h3>0–10 V → proceso</h3><p>Escala una entrada de tensión a la magnitud de ingeniería.</p></div>
+        <button class="fav" data-fav="v010">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Tensión V<input id="vValue" type="number" step="0.01" value="6.5"></label>
+        <label>Mínimo<input id="vMin" type="number" step="0.01" value="0"></label>
+        <label>Máximo<input id="vMax" type="number" step="0.01" value="100"></label>
+        <label>Unidad<input id="vUnit" value="%"></label>
+      </div>
+      <div class="result"><small>RESULTADO</small><strong id="vOut">65.00 %</strong><span id="vPct">65.0 % del rango</span></div>
+    </article>
+
+    <article class="tool" data-category="signals" data-key="genericScale" data-search="escalado lineal raw raw value plc analog input 27648">
+      <div class="tool-head">
+        <div><span class="icon">↗</span><h3>Escalado lineal genérico</h3><p>Convierte cualquier rango de entrada a cualquier rango de salida.</p></div>
+        <button class="fav" data-fav="genericScale">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Entrada actual<input id="scIn" type="number" step="0.01" value="13824"></label>
+        <label>Entrada mínima<input id="scInMin" type="number" step="0.01" value="0"></label>
+        <label>Entrada máxima<input id="scInMax" type="number" step="0.01" value="27648"></label>
+        <label>Salida mínima<input id="scOutMin" type="number" step="0.01" value="0"></label>
+        <label>Salida máxima<input id="scOutMax" type="number" step="0.01" value="100"></label>
+        <label>Unidad salida<input id="scUnit" value="%"></label>
+      </div>
+      <div class="result"><small>SALIDA ESCALADA</small><strong id="scOut">50.00 %</strong><span id="scFormula">y = 0.003617·x + 0</span></div>
+    </article>
+
+    <article class="tool" data-category="plc" data-key="bases" data-search="binario decimal hexadecimal hex bit byte word dword base numérica">
+      <div class="tool-head">
+        <div><span class="icon">01</span><h3>Binario · Decimal · Hex</h3><p>Conversión rápida entre las bases más usadas en PLC.</p></div>
+        <button class="fav" data-fav="bases">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Formato entrada<select id="baseType"><option value="10">Decimal</option><option value="2">Binario</option><option value="16">Hexadecimal</option></select></label>
+        <label>Valor<input id="baseValue" value="255"></label>
+      </div>
+      <div class="result"><small>CONVERSIONES</small><strong id="baseDec">DEC 255</strong><span id="baseBin">BIN 11111111</span><span id="baseHex">HEX FF</span></div>
+    </article>
+
+    <article class="tool" data-category="plc" data-key="int16" data-search="int uint signed unsigned 16 bits word complemento a dos plc">
+      <div class="tool-head">
+        <div><span class="icon">±</span><h3>WORD 16-bit / INT</h3><p>Interpreta un WORD como unsigned, signed, hexadecimal y binario.</p></div>
+        <button class="fav" data-fav="int16">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Valor 0–65535<input id="wordValue" type="number" min="0" max="65535" value="65535"></label>
+      </div>
+      <div class="result"><small>INTERPRETACIÓN</small><strong id="wordSigned">INT: -1</strong><span id="wordUnsigned">UINT: 65535</span><span id="wordHex">HEX: FFFF</span><span id="wordBin">BIN: 1111111111111111</span></div>
+    </article>
+
+    <article class="tool" data-category="plc" data-key="float32" data-search="modbus float real ieee754 32 bit word order endian abc d c d a b">
+      <div class="tool-head">
+        <div><span class="icon">32</span><h3>2 registros Modbus → FLOAT</h3><p>Convierte dos registros de 16 bits a REAL IEEE-754.</p></div>
+        <button class="fav" data-fav="float32">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Registro 1<input id="reg1" type="number" min="0" max="65535" value="16712"></label>
+        <label>Registro 2<input id="reg2" type="number" min="0" max="65535" value="0"></label>
+        <label class="full">Orden de words<select id="wordOrder"><option value="ABCD">ABCD (High word primero)</option><option value="CDAB">CDAB (Low word primero)</option></select></label>
+      </div>
+      <div class="result"><small>FLOAT</small><strong id="floatOut">24.00</strong><span id="floatHex">HEX: 41C00000</span></div>
+    </article>
+
+    <article class="tool" data-category="plc" data-key="time" data-search="tiempo temporizador plc timer ms segundos minutos horas">
+      <div class="tool-head">
+        <div><span class="icon">⏱</span><h3>Conversor de tiempo PLC</h3><p>Convierte entre milisegundos, segundos, minutos y horas.</p></div>
+        <button class="fav" data-fav="time">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Valor<input id="timeValue" type="number" step="0.001" value="5"></label>
+        <label>Unidad<select id="timeUnit"><option value="ms">ms</option><option value="s" selected>s</option><option value="min">min</option><option value="h">h</option></select></label>
+      </div>
+      <div class="result"><small>EQUIVALENCIA</small><strong id="timeMs">5000 ms</strong><span id="timeOther">5 s · 0.083 min · 0.0014 h</span></div>
+    </article>
+
+    <article class="tool" data-category="plc" data-key="s5time" data-search="s5time s5 timer step7 siemens temporizador legacy">
+      <div class="tool-head">
+        <div><span class="icon">S5</span><h3>Generador S5TIME</h3><p>Obtén una representación S5TIME aproximada para STEP 7 clásico.</p></div>
+        <button class="fav" data-fav="s5time">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Tiempo en segundos<input id="s5Seconds" type="number" min="0.01" max="9990" step="0.01" value="5"></label>
+      </div>
+      <div class="result"><small>S5TIME</small><strong id="s5Text">S5T#5S</strong><span id="s5Hex">WORD: W#16#2500</span></div>
+    </article>
+
+    <article class="tool" data-category="electrical" data-key="threePhase" data-search="trifásica potencia kw amperios corriente voltaje cos phi rendimiento motor">
+      <div class="tool-head">
+        <div><span class="icon">3Φ</span><h3>Potencia trifásica</h3><p>Calcula kW desde tensión, corriente, cos φ y rendimiento.</p></div>
+        <button class="fav" data-fav="threePhase">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Tensión línea V<input id="tpV" type="number" step="0.1" value="400"></label>
+        <label>Corriente A<input id="tpI" type="number" step="0.1" value="10"></label>
+        <label>cos φ<input id="tpPf" type="number" min="0" max="1" step="0.01" value="0.85"></label>
+        <label>Rendimiento %<input id="tpEff" type="number" min="1" max="100" step="0.1" value="90"></label>
+      </div>
+      <div class="result"><small>POTENCIA ÚTIL APROX.</small><strong id="tpOut">5.30 kW</strong><span id="tpApp">Aparente: 6.93 kVA</span></div>
+    </article>
+
+    <article class="tool" data-category="electrical" data-key="ohm" data-search="ohm voltaje corriente resistencia potencia ley de ohm electricidad">
+      <div class="tool-head">
+        <div><span class="icon">Ω</span><h3>Ley de Ohm</h3><p>Calcula corriente y potencia a partir de tensión y resistencia.</p></div>
+        <button class="fav" data-fav="ohm">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Tensión V<input id="ohmV" type="number" step="0.01" value="24"></label>
+        <label>Resistencia Ω<input id="ohmR" type="number" step="0.01" value="120"></label>
+      </div>
+      <div class="result"><small>RESULTADO</small><strong id="ohmI">0.200 A</strong><span id="ohmP">Potencia: 4.80 W</span></div>
+    </article>
+
+    <article class="tool" data-category="motors" data-key="rpm" data-search="rpm frecuencia polos motor velocidad síncrona hz variador">
+      <div class="tool-head">
+        <div><span class="icon">↻</span><h3>RPM síncronas de motor</h3><p>Calcula velocidad síncrona desde frecuencia y número de polos.</p></div>
+        <button class="fav" data-fav="rpm">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Frecuencia Hz<input id="rpmHz" type="number" step="0.01" value="50"></label>
+        <label>Polos<select id="rpmPoles"><option>2</option><option selected>4</option><option>6</option><option>8</option><option>10</option><option>12</option></select></label>
+      </div>
+      <div class="result"><small>VELOCIDAD SÍNCRONA</small><strong id="rpmOut">1500 rpm</strong><span>N = 120 · f / p</span></div>
+    </article>
+
+    <article class="tool" data-category="motors" data-key="torque" data-search="par torque nm potencia kw rpm motor 9550">
+      <div class="tool-head">
+        <div><span class="icon">T</span><h3>Par motor</h3><p>Calcula el par aproximado a partir de potencia y RPM.</p></div>
+        <button class="fav" data-fav="torque">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Potencia kW<input id="torqueKw" type="number" step="0.01" value="7.5"></label>
+        <label>Velocidad rpm<input id="torqueRpm" type="number" step="1" value="1450"></label>
+      </div>
+      <div class="result"><small>PAR</small><strong id="torqueOut">49.40 N·m</strong><span>T ≈ 9550 · P / n</span></div>
+    </article>
+
+    <article class="tool" data-category="units" data-key="units" data-search="unidades bar psi kpa celsius fahrenheit mm pulgadas inch longitud presión temperatura">
+      <div class="tool-head">
+        <div><span class="icon">⇄</span><h3>Conversor de unidades</h3><p>Presión, temperatura y longitud.</p></div>
+        <button class="fav" data-fav="units">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Valor<input id="unitValue" type="number" step="0.001" value="1"></label>
+        <label>Conversión<select id="unitType">
+          <option value="bar-psi">bar → psi</option><option value="psi-bar">psi → bar</option>
+          <option value="bar-kpa">bar → kPa</option><option value="kpa-bar">kPa → bar</option>
+          <option value="c-f">°C → °F</option><option value="f-c">°F → °C</option>
+          <option value="mm-in">mm → pulgadas</option><option value="in-mm">pulgadas → mm</option>
+        </select></label>
+      </div>
+      <div class="result"><small>RESULTADO</small><strong id="unitOut">14.504 psi</strong><span id="unitFormula">1 bar = 14.5038 psi</span></div>
+    </article>
+
+    <article class="tool" data-category="signals" data-key="siemensRaw" data-search="siemens 0 27648 raw analogica entrada salida escalado tia step7 plc">
+      <div class="tool-head">
+        <div><span class="icon">S7</span><h3>Siemens 0–27648 ↔ proceso</h3><p>Escalado directo e inverso de una señal analógica Siemens.</p></div>
+        <button class="fav" data-fav="siemensRaw">★</button>
+      </div>
+      <div class="form-grid">
+        <label class="full">Conversión<select id="s7Mode"><option value="raw-eng">RAW → ingeniería</option><option value="eng-raw">Ingeniería → RAW</option></select></label>
+        <label>Valor de entrada<input id="s7Value" type="number" step="0.01" value="13824"></label>
+        <label>RAW máximo<input id="s7RawMax" type="number" step="1" value="27648"></label>
+        <label>Mínimo proceso<input id="s7Min" type="number" step="0.01" value="0"></label>
+        <label>Máximo proceso<input id="s7Max" type="number" step="0.01" value="10"></label>
+        <label class="full">Unidad<input id="s7Unit" value="bar"></label>
+      </div>
+      <div class="result"><small>RESULTADO</small><strong id="s7Out">5.00 bar</strong><span id="s7Pct">50.0 % del rango</span></div>
+    </article>
+
+    <article class="tool" data-category="signals" data-key="pt100" data-search="pt100 rtd temperatura resistencia ohm IEC 60751 sensor">
+      <div class="tool-head">
+        <div><span class="icon">RTD</span><h3>PT100 · Ω ↔ °C</h3><p>Conversión de resistencia y temperatura con ecuación Callendar–Van Dusen.</p></div>
+        <button class="fav" data-fav="pt100">★</button>
+      </div>
+      <div class="form-grid">
+        <label class="full">Conversión<select id="ptMode"><option value="r-t">Resistencia → temperatura</option><option value="t-r">Temperatura → resistencia</option></select></label>
+        <label class="full">Valor<input id="ptValue" type="number" step="0.01" value="119.40"></label>
+      </div>
+      <div class="result"><small>PT100</small><strong id="ptOut">50.00 °C</strong><span id="ptNote">R0 = 100 Ω · IEC 60751</span></div>
+    </article>
+
+    <article class="tool" data-category="plc" data-key="dbx" data-search="siemens dbx db byte bit direccion db313.dbx67.5 step7 tia bool">
+      <div class="tool-head">
+        <div><span class="icon">DB</span><h3>Analizador de dirección DBX</h3><p>Descompone una dirección BOOL de un DB de Siemens.</p></div>
+        <button class="fav" data-fav="dbx">★</button>
+      </div>
+      <div class="form-grid">
+        <label class="full">Dirección DBX<input id="dbxInput" value="DB313.DBX67.5" placeholder="Ej. DB313.DBX67.5"></label>
+      </div>
+      <div class="result"><small>DIRECCIÓN</small><strong id="dbxOut">DB313 · byte 67 · bit 5</strong><span id="dbxDetail">Bit absoluto dentro del DB: 541 · contiene DBB67</span></div>
+    </article>
+
+    <article class="tool" data-category="plc" data-key="modbusAddr" data-search="modbus direccion 40001 30001 holding input register coil discrete fc01 fc02 fc03 fc04 offset">
+      <div class="tool-head">
+        <div><span class="icon">MB</span><h3>Dirección Modbus clásica</h3><p>Convierte notación 0xxxx/1xxxx/3xxxx/4xxxx a offset y función.</p></div>
+        <button class="fav" data-fav="modbusAddr">★</button>
+      </div>
+      <div class="form-grid">
+        <label class="full">Referencia<input id="mbRef" value="40001" placeholder="Ej. 40001"></label>
+      </div>
+      <div class="result"><small>MODBUS</small><strong id="mbOut">Holding Register · FC03</strong><span id="mbDetail">Offset PDU: 0 · referencia 40001</span></div>
+      <div class="tool-note">Usa notación Modicon clásica. Algunos fabricantes documentan directamente offsets 0-based, así que conviene comprobar el manual del equipo.</div>
+    </article>
+
+    <article class="tool" data-category="motors" data-key="vfd" data-search="variador frecuencia vfd hz rpm motor polos deslizamiento slip velocidad">
+      <div class="tool-head">
+        <div><span class="icon">VFD</span><h3>Variador · RPM → Hz</h3><p>Estima la frecuencia necesaria para una velocidad objetivo.</p></div>
+        <button class="fav" data-fav="vfd">★</button>
+      </div>
+      <div class="form-grid">
+        <label>RPM objetivo<input id="vfdRpm" type="number" step="1" value="1450"></label>
+        <label>Polos<select id="vfdPoles"><option>2</option><option selected>4</option><option>6</option><option>8</option><option>10</option><option>12</option></select></label>
+        <label>Deslizamiento estimado %<input id="vfdSlip" type="number" min="0" max="20" step="0.1" value="3.3"></label>
+        <label>Frecuencia base Hz<input id="vfdBaseHz" type="number" step="0.1" value="50"></label>
+      </div>
+      <div class="result"><small>FRECUENCIA ESTIMADA</small><strong id="vfdOut">49.98 Hz</strong><span id="vfdDetail">≈ 100.0 % de 50 Hz · síncrona 1500 rpm</span></div>
+    </article>
+
+    <article class="tool" data-category="signals" data-key="signalAlarm" data-search="alarma sensor 4 20 ma 0 10 v alto bajo high low umbral señal proceso">
+      <div class="tool-head">
+        <div><span class="icon">AL</span><h3>Sensor + alarmas</h3><p>Escala una señal y comprueba umbrales LOW / HIGH configurables.</p></div>
+        <button class="fav" data-fav="signalAlarm">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Tipo de señal<select id="alarmSignalType"><option value="420">4–20 mA</option><option value="010">0–10 V</option></select></label>
+        <label>Señal actual<input id="alarmSignal" type="number" step="0.01" value="12"></label>
+        <label>Mínimo proceso<input id="alarmProcMin" type="number" step="0.01" value="0"></label>
+        <label>Máximo proceso<input id="alarmProcMax" type="number" step="0.01" value="10"></label>
+        <label>Alarma LOW<input id="alarmLow" type="number" step="0.01" value="2"></label>
+        <label>Alarma HIGH<input id="alarmHigh" type="number" step="0.01" value="8"></label>
+        <label class="full">Unidad<input id="alarmUnit" value="bar"></label>
+      </div>
+      <div class="result"><small>ESTADO</small><strong id="alarmOut">5.00 bar · OK</strong><span id="alarmDetail">Señal dentro del rango eléctrico y de alarmas</span></div>
+    </article>
+
+    <article class="tool" data-category="signals" data-key="flowVelocity" data-search="caudal tuberia velocidad m3 h litros segundo diametro pipe flow velocity">
+      <div class="tool-head">
+        <div><span class="icon">Q</span><h3>Caudal y velocidad en tubería</h3><p>Convierte caudal y estima la velocidad media en una tubería circular.</p></div>
+        <button class="fav" data-fav="flowVelocity">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Caudal<input id="flowValue" type="number" step="0.001" value="10"></label>
+        <label>Unidad<select id="flowUnit"><option value="m3h">m³/h</option><option value="ls">L/s</option><option value="lmin">L/min</option></select></label>
+        <label class="full">Diámetro interior mm<input id="pipeDiameter" type="number" min="0.1" step="0.1" value="50"></label>
+      </div>
+      <div class="result"><small>VELOCIDAD MEDIA</small><strong id="flowOut">1.41 m/s</strong><span id="flowDetail">10.000 m³/h · 2.778 L/s · 166.667 L/min</span></div>
+    </article>
+
+    <article class="tool" data-category="plc" data-key="siemensQuick" data-search="siemens tabla rapida dbx dbb dbw dbd byte word dword real analogica 27648 referencia">
+      <div class="tool-head">
+        <div><span class="icon">REF</span><h3>Tabla rápida Siemens</h3><p>Referencias prácticas para señales analógicas y direccionamiento absoluto clásico.</p></div>
+        <button class="fav" data-fav="siemensQuick">★</button>
+      </div>
+      <div class="quick-table">
+        <div><b>0</b><span>0 % analógico</span></div>
+        <div><b>13824</b><span>50 % analógico</span></div>
+        <div><b>27648</b><span>100 % analógico</span></div>
+        <div><b>DBX</b><span>BOOL · bit</span></div>
+        <div><b>DBB</b><span>BYTE · 1 byte</span></div>
+        <div><b>DBW</b><span>WORD / INT · 2 bytes</span></div>
+        <div><b>DBD</b><span>DWORD / REAL · 4 bytes</span></div>
+        <div><b>Bit</b><span>0…7 dentro de cada byte</span></div>
+      </div>
+      <div class="tool-note">Referencia orientativa para direccionamiento absoluto clásico. En DB optimizados y bloques modernos la representación puede ser distinta.</div>
+    </article>
+
+    <article class="tool" data-category="plc" data-key="timeDate" data-search="siemens time tod date milliseconds ms desde medianoche dias 1990 plc">
+      <div class="tool-head">
+        <div><span class="icon">DT</span><h3>TIME / TOD / DATE</h3><p>Interpreta valores clásicos de tiempo y fecha usados en PLC Siemens.</p></div>
+        <button class="fav" data-fav="timeDate">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Tipo<select id="tdType"><option value="TIME">TIME (ms)</option><option value="TOD">TOD (ms desde 00:00)</option><option value="DATE">DATE (días desde 1990-01-01)</option></select></label>
+        <label>Valor<input id="tdValue" type="number" step="1" value="5000"></label>
+      </div>
+      <div class="result"><small>INTERPRETACIÓN</small><strong id="tdOut">00:00:05.000</strong><span id="tdDetail">T#5S</span></div>
+    </article>
+
+    <article class="tool" data-category="plc" data-key="bitMask" data-search="mascara bits bitmask mask hex decimal binario flags 32 bit plc">
+      <div class="tool-head">
+        <div><span class="icon">MASK</span><h3>Máscaras de bits 32-bit</h3><p>Crea una máscara desde bits activos o decodifica una máscara existente.</p></div>
+        <button class="fav" data-fav="bitMask">★</button>
+      </div>
+      <div class="form-grid">
+        <label class="full">Modo<select id="maskMode"><option value="bits">Bits → máscara</option><option value="value">Valor → bits activos</option></select></label>
+        <label class="full">Entrada<input id="maskInput" value="0,2,5" placeholder="Bits: 0,2,5 · o valor: 0x25"></label>
+      </div>
+      <div class="result"><small>MÁSCARA</small><strong id="maskOut">HEX 0x00000025</strong><span id="maskDetail">DEC 37 · bits activos: 0, 2, 5</span></div>
+    </article>
+
+    <article class="tool" data-category="plc" data-key="pid" data-search="pid kp ki kd ti td proporcional integral derivativo controlador plc tuning conversor">
+      <div class="tool-head">
+        <div><span class="icon">PID</span><h3>Conversor PID básico</h3><p>Convierte Kp, Ti y Td a ganancias paralelas Kp, Ki y Kd.</p></div>
+        <button class="fav" data-fav="pid">★</button>
+      </div>
+      <div class="form-grid">
+        <label>Kp<input id="pidKp" type="number" step="0.001" value="2"></label>
+        <label>Ti (s)<input id="pidTi" type="number" min="0" step="0.001" value="10"></label>
+        <label class="full">Td (s)<input id="pidTd" type="number" min="0" step="0.001" value="1"></label>
+      </div>
+      <div class="result"><small>FORMA PARALELA</small><strong id="pidOut">Ki = 0.2000 · Kd = 2.0000</strong><span id="pidDetail">u = Kp·e + Ki·∫e·dt + Kd·de/dt</span></div>
+      <div class="tool-note">Los bloques PID no usan siempre la misma parametrización. Comprueba la convención del bloque antes de copiar valores a un PLC.</div>
+    </article>
+
+    <article class="tool" data-category="networks" data-key="ipCalc" data-search="ip ipv4 cidr subnet máscara red broadcast host industrial ethernet profinet modbus tcp">
+      <div class="tool-head">
+        <div><span class="icon">IP</span><h3>Calculadora de red IPv4</h3><p>Obtén máscara, red, broadcast y rango de hosts desde una IP/CIDR.</p></div>
+        <button class="fav" data-fav="ipCalc">★</button>
+      </div>
+      <div class="form-grid">
+        <label>IPv4<input id="ipAddress" value="192.168.1.25"></label>
+        <label>Prefijo CIDR<input id="ipPrefix" type="number" min="0" max="32" step="1" value="24"></label>
+      </div>
+      <div class="result"><small>RED</small><strong id="ipOut">192.168.1.0 /24</strong><span id="ipDetail">Máscara 255.255.255.0 · broadcast 192.168.1.255</span><span id="ipHosts">Hosts: 192.168.1.1 — 192.168.1.254 · 254 utilizables</span></div>
+    </article>
+
+  </div>
+</div>
+</section>
+
+<section class="section alt" id="favoritas">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">ACCESOS RÁPIDOS</span><h2>Favoritas</h2></div><p>Se guardan en este navegador.</p></div>
+    <div id="favoritesEmpty" class="empty">Pulsa ★ en cualquier herramienta para guardarla aquí.</div>
+    <div id="favoritesList" class="favorites-list"></div>
+  </div>
+</section>
+
+<section class="section" id="historial">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">ÚLTIMOS CÁLCULOS</span><h2>Historial</h2></div><button id="clearHistory" class="ghost-button" type="button">Limpiar historial</button></div>
+    <div id="historyList" class="history-list"></div>
+  </div>
+</section>
+
+<section class="section about" id="acerca">
+  <div class="container about-grid">
+    <div><span class="eyebrow">INDUSTOOLS</span><h2>Hecha para usarla de verdad.</h2></div>
+    <div><p>La idea es sencilla: abrir una web, hacer el cálculo y volver al trabajo. Los cálculos se ejecutan localmente en tu navegador y la aplicación no tiene un backend propio.</p><p class="about-note"><strong>Importante:</strong> IndusTools es una ayuda de cálculo. Comprueba siempre los resultados con la documentación del fabricante y los procedimientos de tu instalación. No debe usarse como única base para decisiones de seguridad funcional, protecciones eléctricas o trabajos críticos.</p></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><b>IndusTools</b><span>Toolbox de automatización industrial</span></div><div class="footer-links"><a href="privacy.html">Privacidad</a><a href="legal.html">Aviso legal</a><a href="https://github.com/andekarivera20-cpu/Industria-tools" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+    <span>HTML · CSS · JavaScript</span>
+  </div>
+</footer>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
