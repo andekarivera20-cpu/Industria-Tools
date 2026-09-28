@@ -494,10 +494,25 @@
 
 <footer>
   <div class="container footer-inner">
-    <div><b>IndusTools</b><span>Toolbox de automatización industrial</span></div><div class="footer-links"><a href="privacy.html">Privacidad</a><a href="legal.html">Aviso legal</a><a href="https://github.com/andekarivera20-cpu/Industria-tools" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+    <div><b>IndusTools</b><span>Toolbox de automatización industrial</span></div><div class="footer-links"><a href="privacy.html">Privacidad</a><button id="privacySettings" class="footer-privacy-button" type="button">Preferencias de privacidad</button><a href="legal.html">Aviso legal</a><a href="https://github.com/andekarivera20-cpu/Industria-tools" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
     <span>HTML · CSS · JavaScript</span>
   </div>
 </footer>
+
+
+<div id="consentBanner" class="consent-banner" hidden role="dialog" aria-live="polite" aria-label="Preferencias de privacidad">
+  <div class="consent-card">
+    <div>
+      <strong>Privacidad y analítica</strong>
+      <p>Usamos Google Analytics solo si aceptas, para saber cuántas visitas recibe IndusTools y qué herramientas se utilizan más. Puedes rechazarlo y la web seguirá funcionando igual.</p>
+      <a href="privacy.html">Más información</a>
+    </div>
+    <div class="consent-actions">
+      <button id="rejectAnalytics" class="consent-button secondary-consent" type="button">Rechazar</button>
+      <button id="acceptAnalytics" class="consent-button primary-consent" type="button">Aceptar analítica</button>
+    </div>
+  </div>
+</div>
 
 <div id="toast" class="toast"></div>
 <script src="script.js"></script>

@@ -15,3 +15,7 @@
 
 Esta versión está configurada específicamente para el repositorio `Industria-tools`.
 No renombres el repositorio sin actualizar canonical, sitemap y enlaces absolutos.
+
+## Google Analytics
+
+La V5 ya incluye Google Analytics 4 con banner de consentimiento. No hace falta pegar ningún código adicional.

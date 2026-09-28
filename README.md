@@ -14,3 +14,8 @@ Este repositorio está preparado para GitHub Pages como proyecto:
 `https://github.com/andekarivera20-cpu/Industria-tools`
 
 Los archivos deben estar en la raíz de la rama `main`.
+
+## Analítica
+
+Google Analytics 4 integrado con consentimiento previo.
+Measurement ID: `G-YDD26E1PNQ`

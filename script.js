@@ -386,4 +386,67 @@ if ("serviceWorker" in navigator) {
   });
 }
 
+
+// ---- Google Analytics 4 con consentimiento previo ----
+const GA_MEASUREMENT_ID = "G-YDD26E1PNQ";
+const ANALYTICS_CONSENT_KEY = "industools-analytics-consent";
+let analyticsLoaded = false;
+
+function loadGoogleAnalytics() {
+  if (analyticsLoaded) return;
+  analyticsLoaded = true;
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function() { dataLayer.push(arguments); };
+  gtag("js", new Date());
+  gtag("config", GA_MEASUREMENT_ID, {
+    anonymize_ip: true
+  });
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_MEASUREMENT_ID);
+  document.head.appendChild(script);
+}
+
+function setAnalyticsConsent(choice) {
+  localStorage.setItem(ANALYTICS_CONSENT_KEY, choice);
+  const banner = document.querySelector("#consentBanner");
+  if (banner) banner.hidden = true;
+  if (choice === "granted") loadGoogleAnalytics();
+}
+
+function openPrivacyPreferences() {
+  const banner = document.querySelector("#consentBanner");
+  if (banner) banner.hidden = false;
+}
+
+const savedAnalyticsConsent = localStorage.getItem(ANALYTICS_CONSENT_KEY);
+if (savedAnalyticsConsent === "granted") loadGoogleAnalytics();
+else if (savedAnalyticsConsent !== "denied") {
+  const banner = document.querySelector("#consentBanner");
+  if (banner) banner.hidden = false;
+}
+
+document.querySelector("#acceptAnalytics")?.addEventListener("click", () => setAnalyticsConsent("granted"));
+document.querySelector("#rejectAnalytics")?.addEventListener("click", () => setAnalyticsConsent("denied"));
+document.querySelector("#privacySettings")?.addEventListener("click", openPrivacyPreferences);
+
+// Eventos agregados: qué herramienta se consulta/interactúa.
+// No enviamos los valores escritos por el usuario.
+document.querySelectorAll(".tool").forEach((card) => {
+  let tracked = false;
+  const track = () => {
+    if (tracked || !analyticsLoaded || typeof window.gtag !== "function") return;
+    tracked = true;
+    gtag("event", "tool_used", {
+      tool_key: card.dataset.key || "unknown",
+      tool_category: card.dataset.category || "unknown"
+    });
+  };
+  card.querySelectorAll("input,select").forEach(el => {
+    el.addEventListener("change", track, { once: true });
+  });
+});
+
 });

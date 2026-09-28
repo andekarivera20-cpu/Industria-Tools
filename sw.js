@@ -1,4 +1,4 @@
-const CACHE="industools-v4";
+const CACHE="industools-v5-analytics";
 const ASSETS=[
   "./","./index.html","./style.css","./script.js",
   "./privacy.html","./legal.html","./offline.html",
