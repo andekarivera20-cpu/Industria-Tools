@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Modbus FLOAT online | Convertir 2 registros de 16 bits a REAL</title>
+<meta name="description" content="Convierte dos registros Modbus de 16 bits a un FLOAT IEEE-754 y prueba el orden de words.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://andekarivera20-cpu.github.io/Industria-Tools/modbus-float.html">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon-32.png">
+<meta property="og:type" content="article"><meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Modbus FLOAT online | Convertir 2 registros de 16 bits a REAL"><meta property="og:description" content="Convierte dos registros Modbus de 16 bits a un FLOAT IEEE-754 y prueba el orden de words.">
+<meta property="og:url" content="https://andekarivera20-cpu.github.io/Industria-Tools/modbus-float.html"><meta property="og:image" content="https://andekarivera20-cpu.github.io/Industria-Tools/social-card.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué es IEEE-754?", "acceptedAnswer": {"@type": "Answer", "text": "Es un formato ampliamente usado para representar números en coma flotante de 32 bits."}}, {"@type": "Question", "name": "¿ABCD y CDAB son lo mismo?", "acceptedAnswer": {"@type": "Answer", "text": "No. Cambiar el orden de los words modifica los 32 bits interpretados y, por tanto, el valor resultante."}}, {"@type": "Question", "name": "¿Qué función Modbus lee Holding Registers?", "acceptedAnswer": {"@type": "Answer", "text": "Normalmente se asocia la lectura de Holding Registers con la función 03, aunque debes seguir la documentación del dispositivo."}}]}</script>
+</head>
+<body>
+<header class="header"><div class="container header-inner"><a class="brand" href="./"><span class="brand-mark">IT</span><span>Indus<span>Tools</span></span></a><nav><a href="./#herramientas">Herramientas</a><a href="./#guias">Guías</a></nav></div></header>
+<main class="seo-page container">
+  <a class="seo-back" href="./">← Volver a IndusTools</a>
+  <div class="seo-hero"><span class="eyebrow">CALCULADORA INDUSTRIAL</span><h1>Modbus: 2 registros → FLOAT</h1><p>Introduce dos registros de 16 bits y comprueba su interpretación como un número FLOAT de 32 bits. Puedes alternar el orden de words para diagnosticar equipos con convenciones distintas.</p>
+  <a class="button primary" href="./#plc">Usar calculadora →</a></div>
+  <div class="seo-content"><section><h2>Por qué hacen falta dos registros</h2><p>Un FLOAT de 32 bits ocupa cuatro bytes, mientras que un registro Modbus contiene 16 bits. Por eso se necesitan dos registros consecutivos.</p></section><section><h2>Orden de words</h2><p>Distintos equipos pueden documentar el orden de los dos words de forma diferente. El manual del fabricante debe indicar cómo interpretar sus datos.</p></section><section><h2>Direcciones Modbus</h2><p>No confundas el número de referencia mostrado en un manual con el offset que utiliza una librería o función concreta; algunas documentaciones son 1-based y otras trabajan con offsets.</p></section></div>
+  <section class="seo-faq"><h2>Preguntas frecuentes</h2><details><summary>¿Qué es IEEE-754?</summary><p>Es un formato ampliamente usado para representar números en coma flotante de 32 bits.</p></details><details><summary>¿ABCD y CDAB son lo mismo?</summary><p>No. Cambiar el orden de los words modifica los 32 bits interpretados y, por tanto, el valor resultante.</p></details><details><summary>¿Qué función Modbus lee Holding Registers?</summary><p>Normalmente se asocia la lectura de Holding Registers con la función 03, aunque debes seguir la documentación del dispositivo.</p></details></section>
+  <section class="seo-related"><h2>También te puede servir</h2><div><a href="escalado-siemens-27648.html">Siemens 0–27648</a><a href="calculadora-4-20-ma.html">4–20 mA</a><a href="modbus-float.html">Modbus FLOAT</a><a href="calculadora-ipv4-cidr.html">IPv4 / CIDR</a></div></section>
+  <p class="seo-disclaimer">IndusTools es una ayuda de cálculo. Antes de aplicar resultados en una instalación real, contrástalos con la documentación del fabricante y los procedimientos de seguridad aplicables.</p>
+</main>
+<footer><div class="container footer-inner"><div><b>IndusTools</b><span>Toolbox de automatización industrial</span></div><div class="footer-links"><a href="privacy.html">Privacidad</a><a href="legal.html">Aviso legal</a></div></div></footer>
+</body></html>

@@ -1,7 +1,7 @@
 {
   "name": "IndusTools — Automatización industrial",
   "short_name": "IndusTools",
-  "description": "Herramientas gratuitas para PLC, señales, Modbus, motores, electricidad y redes.",
+  "description": "Calculadoras para PLC, señales, Modbus, motores, electricidad y redes.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

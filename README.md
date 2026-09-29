@@ -1,21 +1,14 @@
-# IndusTools
+# IndusTools V7 SEO
 
-Web pública de herramientas para automatización industrial.
+Web: https://andekarivera20-cpu.github.io/Industria-Tools/
 
-Sitio: https://andekarivera20-cpu.github.io/Industria-Tools/
+V7 añade:
+- 10 páginas SEO específicas con URL propia.
+- sitemap.xml ampliado.
+- títulos, descripciones, canonical y Open Graph.
+- FAQ schema en páginas de herramientas.
+- enlaces internos desde la portada.
+- Google Analytics 4 con consentimiento.
+- PWA/offline.
 
-Incluye 26 utilidades para señales analógicas, PLC/Siemens, Modbus,
-electricidad, motores, unidades, PID y redes IPv4.
-
-## Publicación
-
-Este repositorio está preparado para GitHub Pages como proyecto:
-
-`https://github.com/andekarivera20-cpu/Industria-Tools`
-
-Los archivos deben estar en la raíz de la rama `main`.
-
-## Analítica
-
-Google Analytics 4 integrado con consentimiento previo.
-Measurement ID: `G-YDD26E1PNQ`
+La web principal mantiene las 26 herramientas.

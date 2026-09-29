@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/calculadora-4-20-ma.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/escalado-siemens-27648.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/pt100-resistencia-temperatura.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/modbus-float.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/s5time-step7.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/calculadora-ipv4-cidr.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/potencia-trifasica.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/par-motor.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/ley-ohm.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/conversor-binario-decimal-hex.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/privacy.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://andekarivera20-cpu.github.io/Industria-Tools/legal.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
 </urlset>
